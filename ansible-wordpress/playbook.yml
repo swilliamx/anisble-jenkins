@@ -1,4 +1,4 @@
-- hosts: student
+- hosts: wordpress
   gather_facts: False
   remote_user: swilliams
   become: yes
