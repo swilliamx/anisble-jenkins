@@ -1,0 +1,10 @@
+- name: Install PHP Remi Repository
+  dnf: name=http://rpms.remirepo.net/enterprise/remi-release-8.rpm update_cache=yes state=latest
+ 
+- name: Enable PHP Remi Repository
+  command: dnf module reset php -y
+  command: dnf module enable php:remi-7.4 -y
+ 
+- name: Install PHP Extensions
+  dnf: name={{ item }} update_cache=yes state=latest
+  loop: "{{ php_modules }}"
