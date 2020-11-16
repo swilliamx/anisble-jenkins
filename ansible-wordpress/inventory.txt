@@ -1,4 +1,0 @@
-#target1 ansible_host=md-student-01.xpaceform.com ansible_user=root ansible_ssh_pass=Redhat123
-
-[student]
-md-student-01.xpaceform.com
