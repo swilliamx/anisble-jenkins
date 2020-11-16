@@ -1,5 +1,3 @@
-https://linuxbuz.com/linuxhowto/how-to-install-wordpress-with-ansible
-
 Set Up WordPress Using Ansible
 
 Step 1: Create a Directory Structure
