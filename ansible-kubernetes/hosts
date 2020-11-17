@@ -1,0 +1,16 @@
+[kubernetes-master-nodes]
+md-kubemaster-01.xpaceform.com
+
+[kubernetes-worker-nodes]
+md-kubenode-01.xpaceform.com
+md-kubenode-02.xpaceform.com
+
+[kubernetes:children]
+kubernetes-worker-nodes
+kubernetes-master-nodes
+
+#[kubernetes:vars]
+#ansible_password=Redhat123
+#ansible_ssh_user=swilliams
+
+
