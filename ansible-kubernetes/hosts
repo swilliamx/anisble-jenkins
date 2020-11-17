@@ -8,9 +8,3 @@ md-kubenode-02.xpaceform.com
 [kubernetes:children]
 kubernetes-worker-nodes
 kubernetes-master-nodes
-
-#[kubernetes:vars]
-#ansible_password=Redhat123
-#ansible_ssh_user=swilliams
-
-
