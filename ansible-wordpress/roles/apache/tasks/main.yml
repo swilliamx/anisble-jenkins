@@ -1,5 +1,6 @@
 - name: Install HTTP Packages
-  dnf: name=httpd update_cache=yes state=latest
+  use_backend: yum name=httpd update_cache=yes state=latest
+  
  
 - name: Start httpd service
   systemd: name=httpd state=started enabled=yes
