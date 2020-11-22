@@ -1,6 +1,7 @@
 # MySQL Configuration
     - name: Install MySQL Packages
-      yum: name={{ item }} update_cache=yes state=latest
+      use_backend: yum name={{ item }} update_cache=yes state=latest
+      #yum: name={{ item }} update_cache=yes state=latest
       loop: [ 'mysql-server', 'php-mysqlnd', 'python3-PyMySQL' ]
  
     - name: Start mysqld service
